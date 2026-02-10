@@ -1,0 +1,117 @@
+body{
+    margin:0;
+}
+
+nav a {
+    color: white;
+    padding: 12px 26px;
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(6px);
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    color: white;
+}
+
+nav a:hover {
+    background: cornflowerblue;
+    box-shadow: 0 6px 18px rgba(100,149,237,0.6);
+    transform: translateY(-2px);
+}
+
+.banner{
+    color:rgb(46, 46, 48);
+}
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0;
+    background: linear-gradient(135deg, rgb(194, 157, 219), rgb(123, 160, 197));
+    box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+}
+nav{
+    padding: 10px;
+}
+nav a:hover{
+    color:rgb(176, 183, 202);
+    transition: 1s;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Audiowide, sans-serif;
+}
+
+
+header img {
+    height: 150px;
+    align-self: center;
+}
+
+
+nav {
+    display: flex;
+    gap: 15px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    padding: 12px 26px;
+    border-radius: 30px;
+    background: #4f79c6; /* solid color */
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif, sans-serif;
+    transition: all 0.3s ease;
+}
+
+
+
+nav a:hover {
+    background: rgb(147, 171, 216);
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(100, 149, 237, 0.4);
+}
+
+nav a::after {
+    position: absolute;
+    left: 50%;
+    bottom: 6px;
+    width: 0;
+    height: 2px;
+    background: white;
+    transition: 0.3s ease;
+    transform: translateX(-50%);
+}
+
+nav a:hover::after {
+    width: 60%;
+}
+
+header::after {
+    content: "";
+    width: 60%;
+    height: 2px;
+    background: white;
+    display: block;
+    margin: 15px 0;
+    box-shadow: 0 0 12px rgba(255,255,255,0.8);
+}
+
+header::before {
+    content: "";
+    width: 60%;
+    height: 2px;
+    background: white;
+    display: block;
+    margin: 15px 0;
+    box-shadow: 0 0 12px rgba(255,255,255,0.8);
+}
+
